@@ -70,8 +70,8 @@
   </div>
 
   <!-- Repita para todos os demais produtos (copie do seu código original) -->
-
-   <!-- Formulário com controle de múltiplos produtos -->
+  
+<!-- Formulário -->
   <form action="https://formsubmit.co/rsantos@nmsb.com.br" method="POST">
     <h2>📩 Fazer Pedido</h2>
 
@@ -81,48 +81,36 @@
     <label>Telefone:</label>
     <input type="tel" name="telefone" required>
 
-    <h3>Produtos:</h3>
+    <label>Produto desejado:</label>
+    <select name="produto" required>
+      <option value="">-- Selecione --</option>
+      <option>Stiletto Azul</option>
+      <option>All In Coral</option>
+      <option>Precision Royal</option>
+      <option>Final Azul</option>
+      <option>Final Preto</option>
+      <option>Goleiro Azul</option>
+      <option>Goleiro Laranja</option>
+      <option>Indoor Preto</option>
+      <option>Indoor Turquesa</option>
+    </select>
 
-    <div class="quantidade-group">
-      <label for="stiletto">Stiletto Azul:</label>
-      <input type="number" id="stiletto" name="Stiletto Azul" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="coral">All In Coral:</label>
-      <input type="number" id="coral" name="All In Coral" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="royal">Precision Royal:</label>
-      <input type="number" id="royal" name="Precision Royal" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="azul">Final Azul:</label>
-      <input type="number" id="azul" name="Final Azul" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="preto">Final Preto:</label>
-      <input type="number" id="preto" name="Final Preto" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="gol_azul">Goleiro Azul:</label>
-      <input type="number" id="gol_azul" name="Goleiro Azul" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="gol_laranja">Goleiro Laranja:</label>
-      <input type="number" id="gol_laranja" name="Goleiro Laranja" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="indoor_preto">Indoor Preto:</label>
-      <input type="number" id="indoor_preto" name="Indoor Preto" min="0" placeholder="Qtd">
-    </div>
-    <div class="quantidade-group">
-      <label for="turquesa">Indoor Turquesa:</label>
-      <input type="number" id="turquesa" name="Indoor Turquesa" min="0" placeholder="Qtd">
-    </div>
+    <label>Tamanho:</label>
+    <select name="tamanho" required>
+      <option>37</option>
+      <option>38</option>
+      <option>39</option>
+      <option>40</option>
+      <option>41</option>
+      <option>42</option>
+      <option>43</option>
+      <option>44</option>
+    </select>
 
     <label>Mensagem adicional:</label>
-    <textarea name="mensagem" rows="4" placeholder="Ex: tamanhos desejados, entrega, etc."></textarea>
+    <textarea name="mensagem" rows="4" placeholder="Ex: Quero 2 pares, entregas em Curitiba, etc."></textarea>
 
+    <!-- Configurações -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://nmsb2025.github.io/kelme-catalogo/obrigado.html">
 
@@ -131,4 +119,4 @@
 
 </body>
 </html>
-
+   
