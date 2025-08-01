@@ -10,6 +10,9 @@
       margin: 20px;
     }
     .produto {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
       background-color: white;
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -17,12 +20,13 @@
       margin-bottom: 20px;
       box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     }
-    img {
-      max-width: 100%;
+    .produto img {
       width: 200px;
       height: auto;
-      display: block;
-      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+    .produto-info {
+      flex: 1;
     }
     form {
       background-color: white;
@@ -52,80 +56,22 @@
 <body>
 
   <h1>Catálogo de Produtos – Kelme Brasil</h1>
-<div class="produto">
-        <h2>CHUTEIRA SIN STILETTO FS BLUE</h2>
-        <img src="images/Chuteira Futsal - Stletto Azul.png" alt="CHUTEIRA SIN STILETTO FS BLUE">
-        <p>A Chuteira Kelme Stiletto FS Blue é ideal para atletas que buscam desempenho, leveza e controle em quadra...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
 
-    <div class="produto">
-        <h2>CHUTEIRA SIN ALL IN FS CORAL</h2>
-        <img src="images/Chuteira Futsal - All In Coral.png" alt="CHUTEIRA SIN ALL IN FS CORAL">
-        <p>A Chuteira Kelme All In FS Coral é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
+  <!-- Produtos -->
+  <!-- Para cada produto, encapsule a imagem e as infos -->
+  <div class="produto">
+    <img src="images/Chuteira Futsal - Stletto Azul.png" alt="CHUTEIRA SIN STILETTO FS BLUE">
+    <div class="produto-info">
+      <h2>CHUTEIRA SIN STILETTO FS BLUE</h2>
+      <p>Ideal para atletas que buscam desempenho, leveza e controle em quadra...</p>
+      <p><strong>Tamanhos:</strong> 37 a 44</p>
+      <p><strong>Preço:</strong> R$ 250.00</p>
     </div>
+  </div>
 
-    <div class="produto">
-        <h2>CHUTEIRA SIN PRECISION FS  ROYAL</h2>
-        <img src="images/Chuteira Futsal - Precision Royal.png" alt="CHUTEIRA SIN PRECISION FS  ROYAL">
-        <p>A Chuteira Kelme Precision FS Royal é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
+  <!-- Repita para todos os demais produtos (copie do seu código original) -->
 
-    <div class="produto">
-        <h2>CHUTEIRA SIN FINAL INDOOR BLUE</h2>
-        <img src="images/Chuteira Futsal - Final Azul.png" alt="CHUTEIRA SIN FINAL INDOOR BLUE">
-        <p>A Chuteira Kelme Final Indoor Blue é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
-
-    <div class="produto">
-        <h2>CHUTEIRA SIN FINAL INDOOR BLACK</h2>
-        <img src="images/Chuteira Futsal - Final Preto.png" alt="CHUTEIRA SIN FINAL INDOOR BLACK">
-        <p>A Chuteira Kelme Final Indoor Black é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
-
-    <div class="produto">
-        <h2>CHUTEIRA SIN GOLEIRO FS LARANJA</h2>
-        <img src="images/Chuteira Futsal - Goleiro Laranja.png" alt="CHUTEIRA SIN GOLEIRO FS LARANJA">
-        <p>A Chuteira Kelme Goleiro FS Laranja é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
-
-    <div class="produto">
-        <h2>CHUTEIRA SIN GOLEIRO FS AZUL</h2>
-        <img src="images/Chuteira Futsal - Goleiro Azul.png" alt="CHUTEIRA SIN GOLEIRO FS AZUL">
-        <p>A Chuteira Kelme Goleiro FS Azul é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
-
-    <div class="produto">
-        <h2>CHUTEIRA SIN INDOOR COPA FS PRETO</h2>
-        <img src="images/Chuteira Futsal - Indoor Copa Preto.png" alt="CHUTEIRA SIN INDOOR COPA FS PRETO">
-        <p>A Chuteira Kelme Indoor Copa FS Preto é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
-
-    <div class="produto">
-        <h2>CHUTEIRA SIN INDOOR COPA FS TURQUESA</h2>
-        <img src="images/Chuteira Futsal - Indoor Copa Turquesa.png" alt="CHUTEIRA SIN INDOOR COPA FS TURQUESA">
-        <p>A Chuteira Kelme Indoor Copa FS Turquesa é ideal para atletas que buscam desempenho...</p>
-        <p><strong>Tamanhos disponíveis:</strong> 37 (24 un), 38 (24 un),  39 (48 un), 40 (48 un), 41 (48 un), 42 (48 un), 43 (24 un), 44 (24 un)</p>
-        <p><strong>Preço:</strong> R$ 250.00</p>
-    </div>
-  
-  <!-- Adicione mais blocos de produto conforme necessário -->
-
+  <!-- Formulário -->
   <form action="https://formsubmit.co/rsantos@nmsb.com.br" method="POST">
     <h2>📩 Fazer Pedido</h2>
 
